@@ -6,6 +6,7 @@ html, body {
   height: 100%;
   position: fixed;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .header {
@@ -21,7 +22,7 @@ html, body {
 .content_box {
 	background: white;
 	background: rgba(255, 255, 255, 0.95);
-	}
+}
 
 .welcome_banner {
 	margin-top: 400px;
