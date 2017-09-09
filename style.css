@@ -1,0 +1,12 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.page_container {
+  padding: 20px;
+}
