@@ -1,3 +1,4 @@
+/* --- Generic styles --- */
 html, body {
   font-family: 'Lato', sans-serif;
   color: #333;
@@ -9,53 +10,78 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-.header {
-  font-size: 22px;
-  padding-bottom: 20px;
-}
-
-.page_container {
+.page-container {
 	width: 100%;
 	height: 100%;
 }
 
-.content_box {
+.content-box {
 	background: white;
 	background: rgba(255, 255, 255, 0.95);
 }
 
-.welcome_banner {
+/* --- Utility classes --- */
+.light {
+	font-weight: 300;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.blue-text {
+	color: #70B3CD;
+}
+
+.cursive {
+	font-family: 'Dancing Script', cursive;
+}
+
+/* --- Welcome banner styles --- */
+.welcome-banner {
 	margin-top: 400px;
 	padding: 24px;	
 	text-align: center;
 }
 
-.welcome_header {
+.welcome-banner__header {
 	font-size: 64px;
-	font-weight: 300;
 }
 
-.welcome_subline {
+.welcome-banner__subline {
 	font-size: 16px;
-	color: #C2C2C2;
+	color: #999ea0;
 	margin-top: 4px;
 }
 
-.welcome_subline:first-of-type {
+.welcome-banner__subline:first-of-type {
 	margin-top: 12px;
 }
 
-.blue_text {
-	color: #70B3CD;
-}
 
-.wedding_details {
+/* --- Wedding details --- */
+.wedding-details {
 	padding: 48px 20%;
 	font-size: 16px;
 	line-height: 1.2em;
 	margin: 300px 0;
 }
 
-.wedding_details p {
+.wedding-details__header {
+	font-size: 32px;
+}
+
+.wedding-details p {
 	margin-top: 12px;
+}
+
+.wedding-details p:first-of-type {
+	margin-top: 16px;
+}
+
+/* --- Mobile web modifications --- */
+@media (min-width: 320px) and (max-width: 736px) {
+  .welcome-banner {
+  	margin-top: 375px;
+  }
 }

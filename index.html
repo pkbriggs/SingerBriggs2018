@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Singer-Briggs 2018 Wedding</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <div class="page_container">
-      <div class="welcome_banner content_box">
-        <h1 class="welcome_header">ERIN <span class="blue_text">+</span> PAT</h1>
-        <h2 class="welcome_subline">CELEBRATE WITH US</h2>
-        <h2 class="welcome_subline">JULY 21, 2018</h2>
+    <div class="page-container">
+      <div class="welcome-banner content-box">
+        <h1 class="welcome-banner__header cursive">Erin <span class="blue-text bold">+</span> Pat</h1>
+        <h2 class="welcome-banner__subline light">WERE GETTING MARRIED!</h2>
+        <h2 class="welcome-banner__subline light">JULY 21, 2018</h2>
       </div>
 
-      <div class="content_box wedding_details">
+      <a name="hotels"></a>
+      <div class="wedding-details content-box">
+        <h3 class="wedding-details__header cursive blue-text">
+          Hotel stuff
+        </h3>
         <p>Lorem ipsum dolor sit amet, apeirian argumentum id pro. Vim et altera signiferumque. Eum et meis consulatu. Dicta nostro discere usu ex. Movet ceteros temporibus ex eum.</p>
 
         <p>Mea etiam antiopam ex, vis amet partiendo dignissim ad, in dico utamur interpretaris vis. Eu vis aliquip oportere conclusionemque, sit an vero munere nominati, eos et dico latine. Eos no unum timeam accommodare, duo id dolorem inimicus. Eu vix sonet alienum, invidunt deserunt vituperatoribus at eos. Dicant consul perpetua ei eam.</p>
@@ -31,5 +36,21 @@
        
       </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+          e.preventDefault();
+          var target = $("a[name='" + this.hash.replace("#", "") + "']");
+          $('html, body').stop().animate({
+            'scrollTop': target.offset().top
+          }, 900, 'swing', function () {
+            window.location.hash = target[0].name;
+          });
+        });
+      });
+    </script>
   </body>
 </html>
