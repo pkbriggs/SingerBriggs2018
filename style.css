@@ -40,7 +40,7 @@ html, body {
 /* --- Welcome banner styles --- */
 .welcome-banner {
 	margin-top: 400px;
-	padding: 24px;	
+	padding: 24px;
 	text-align: center;
 }
 
@@ -71,12 +71,25 @@ html, body {
 	font-size: 32px;
 }
 
-.wedding-details p {
-	margin-top: 12px;
+.wedding-details__content {
+        margin-top: 12px;
+        margin-bottom: 30px;
 }
 
-.wedding-details p:first-of-type {
-	margin-top: 16px;
+/* --- Ceremony details --- */
+.ceremony-details__list {
+  padding-top: 10px;
+}
+
+/* --- Hotels list --- */
+.hotels-list {
+  list-style-type: disc;
+  padding: 10px 0px 20px 20px;
+}
+
+.hotels-list__sublist {
+  list-style-type: circle;
+  padding-left: 30px;
 }
 
 /* --- Mobile web modifications --- */
