@@ -199,4 +199,8 @@ a:hover.nav-item {
   .wedding-details--sub-page {
     margin: 0;
   }
+
+  .nav-item {
+    font-weight: 700;
+  }
 }
