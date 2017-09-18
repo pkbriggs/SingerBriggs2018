@@ -21,11 +21,6 @@ html, body {
   margin-top: 400px;
 }
 
-.content-box {
-	background: white;
-	background: rgba(255, 255, 255, 0.95);
-}
-
 /* --- Utility classes --- */
 .light {
 	font-weight: 300;
@@ -45,10 +40,6 @@ html, body {
 
 .text-align-center {
   text-align: center;
-}
-
-.text-align-lef {
-  text-align: left;
 }
 
 /* --- Navigation styles --- */
@@ -105,8 +96,9 @@ a:hover.nav-item {
 
 /* --- Welcome banner styles --- */
 .welcome-banner {
+  background: white;
+  background: rgba(255, 255, 255, 0.95);
 	padding: 24px;
-	text-align: center;
 }
 
 .welcome-banner__header {
@@ -127,10 +119,10 @@ a:hover.nav-item {
 /* --- Wedding details --- */
 .wedding-details {
   background: white;
+  margin: 300px 0 0;
 	padding: 48px 30%;
 	font-size: 16px;
 	line-height: 1.2em;
-	margin: 300px 0 0;
 }
 
 .wedding-details__header {
@@ -150,6 +142,8 @@ a:hover.nav-item {
 .wedding-details a {
   text-decoration: none;
   color: #333;
+
+  /* transitions */
   -webkit-transition: all .2s ease-out;
   -moz-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
@@ -174,7 +168,7 @@ a:hover.nav-item {
 /* --- Hotels list --- */
 .hotels-list {
   list-style-type: disc;
-  padding: 10px 0px 20px 20px;
+  padding: 10px 0 20px 20px;
 }
 
 .hotel {
@@ -192,15 +186,15 @@ a:hover.nav-item {
   	margin-top: 375px;
   }
 
+  .nav-item {
+    font-weight: 700;
+  }
+
   .wedding-details {
     padding: 48px 15%;
   }
 
   .wedding-details--sub-page {
     margin: 0;
-  }
-
-  .nav-item {
-    font-weight: 700;
   }
 }
